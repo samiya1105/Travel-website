@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+</head>
+<body onload="ShowBanners()">
+<!-- About Start -->                 <nav class="navbar navbar-custom">
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-plane fa-lg"></i> WanderlustTravel
+        </a>
+        <button class="navbar-toggler" onclick="toggleNav()">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="navbar-nav-container">
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packages.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servves.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="revew.html">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    
+                        
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn nav-link">    <i class="fa-solid fa-search fa-lg"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="home.html">Home</a>
+                        <a href="book.html">Book Now</a>
+                        <a href="packages.html">Packages</a>
+                        <a href="servves.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="revew.html">Reviews</a>
+                        <a href="about.html">About us</a>
+                        </div>
+                        </div>
+                </button>
+            </li>
+            </div>
+        </div>
+    </nav>
+    
+<section class="about">
+  <div class="container">
+    <div class="main-txt">
+        
+    <h1 class="heading wow fadeIn">
+        <span>a</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span>u</span>
+        <span>s</span>
+    </h1>
+    </div>
+
+    <div class="about-content" style="margin-top: 30px;">
+      <center>
+        <!-- Banner Container -->
+        <div style="position: relative; width: 100%; max-width: 1200px; height: 500px;">
+            <!-- Banner Image -->
+            <img src="images/abt1.jpg" width="100%" height="500px" name="ChangeBanner" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+            <!-- Overlay Text -->
+            <p id="aboutText">
+                At our WanderLust, we believe travel is about more than destinations; it's about discovery and growth. Our guides and tips empower you to explore, experience, and connect on every journey. Let us inspire you to see the world differently.
+            </p>
+        </div>
+    </center>
+    </div>
+  </div>
+</section>
+    <!-- About End -->
+    <div class="border-line"></div>
+
+    <!-- our leaders -->
+    <section class="our-leaders">
+        <div class="leader-container">
+            <div class="leader-abt">
+                <h1 class="leader-headng">Our Leaders</h1>
+                <p>The thought pioneers that inspire & shape us</p>
+                <p>Get to know the members of our leadership team. Their deep insights and decades of unparalleled market expertise set us apart from the competition and help us in providing our customers with super-smooth travel booking experiences.</p>
+            </div>
+            <div class="leader-row">
+                <div class="col">
+                    <img src="images/DeepKalra.jpg" alt="Founder & Chairman" height="300x" width="300x">
+                    <h3>Deep Kalra</h3>
+                    <p>Founder & Chairman</p>
+                </div>
+                <div class="col">
+                    <img src="images/RajeshMagow.jpg" alt="Co-Founder & Group CEO" height="300x" width="300x">
+                    <h3>Rajesh Magow</h3>
+                    <p>Co-Founder & Group CEO</p>
+                </div>
+                <div class="col">
+                    <img src="images/SanjayMohan.jpg" alt="Group Chief Technology Officer" height="300x" width="300x">
+                    <h3>Sanjay Mohan</h3>
+                    <p>Group Chief Technology Officer</p>
+                </div>
+                <div class="col">
+                    <img src="images/MohitKabra.jpg" alt="Chief Business Officer" height="300x" width="300x">
+                    <h3>Mohit Kabra</h3>
+                    <p>Chief Business Officerr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-line"></div>
+    <section class="footprnt">
+        <div class="foot-contaner">
+            <h1 class="leader-headng">Our Footprint</h1>
+            <p>The expanse of our business and customer reach</p>
+            <div class="leader-row">
+                <div class="footprnt-content">
+                    <h2 class="footprnt-headng">69 Mn.+</h2>
+                    <p>Lifetime Transacted Users</p>
+                </div>
+                <div class="footprnt-content">
+                    <h2 class="footprnt-headng">68 Mn.+</h2>
+                    <p>Monthly Active Users</p>
+                </div>
+                <div class="footprnt-content">
+                    <h2 class="footprnt-headng">420 Mn.+</h2>
+                    <p>App Download</p>
+                </div>
+                <div class="footprnt-content">
+                    <h2 class="footprnt-headng">3/10</h2>
+                    <p>Domestic Flyers Book with Us</p>
+                </div>
+            </div>
+            <div class="happy-content">
+                <h2 class="footprnt-headng">5000+</h2>
+                <p>Happy customers</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-line"></div>
+    <!-- Social-Meadi Section -->
+    <div class="social-meadi-contact">
+        <h2 class="social-text">KEEP IN TOUCH</h2>
+        <h1>Travel with us</h1>
+        <div class="social-meadi-icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+
+    <div class="border-line"></div>
+    <!-- contact-footer -->
+        <section class="footer-about">
+            <div class="footer-contaner">
+                <div class="footer-img">
+                    <p class="contact-text">PROMO</p>
+                    <img src="images/promo.jpg" alt="promo" style="margin-top: 10px,;" width="400px" height="250px" >
+                    <div class="promo-text">Finding Your Perfect Place To Visit This Summer</div>
+                </div>
+                <div class="quick-links">
+                    <p class="contact-text">QUICK LINKS</p>
+                   <div class="linklist">
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">Services</a></li>
+                            <li><a href="#" class="lists">Insurance</a></li>
+                            <li><a href="#" class="lists">Agency</a></li>
+                            <li><a href="#" class="lists">Tourism</a></li>
+                            <li><a href="#" class="lists">Payment</a></li>
+                        </ul>
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">Booking</a></li>
+                            <li><a href="#" class="lists">RentalCar</a></li>
+                            <li><a href="#" class="lists">HostelWorld</a></li>
+                            <li><a href="#" class="lists">Trivago</a></li>
+                            <li><a href="#" class="lists">TripAdvisor</a></li>
+                        </ul>
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">London</a></li>
+                            <li><a href="#" class="lists">California</a></li>
+                            <li><a href="#" class="lists">Indonesia</a></li>
+                            <li><a href="#" class="lists">Europe</a></li>
+                            <li><a href="#" class="lists">Oceania</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <p class="contact-text">CONTACT INFO</p>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </div>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        +2 392 3929 210
+                    </div>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-envelope"></i>
+                        emailaddress@domain.com
+                    </div>
+                    <p class="contact-text">SUBSCRIBE</p>
+                    <div class="subscribe-email">
+                        <input type="text" placeholder="example123@gmail.com" class="email-input">
+                        <input type="submit" value="SEND" class="snd-btn">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="owners">Copyright ©2024 All rights reserved | This website is made with <i class="fa-solid fa-heart"></i>by</p>
+                <p class="owners names">Shaikh Samiya | Syed Afifa | Topiwala Ayesha | Ayman Zehra | Shaikh Mishkat</p>
+            </footer>
+        </section>
+        <script language="Javascript">
+         var MyBanners = ["images/abt1.jpg", "images/abt2.jpg", "images/abt3.jpg", "images/abt4.jpg"];
+        var AboutText = [
+            "At our WanderLust, we believe travel is about more than destinations; it's about discovery and growth. Our guides and tips empower you to explore, experience, and connect on every journey. Let us inspire you to see the world differently.",
+            "Our travel dreams are unique, and so are our recommendations. From solo trips to family adventures, our WanderLust offers insights for every style and budget. Let us help you turn your wanderlust into unforgettable memories.",
+            "Planning a trip should be easy, exciting, and rewarding. Our resources provide all you need to travel confidently and smoothly. With our WanderLust, focus on making memories, while we guide you every step of the way.",
+            "With our WanderLust, planning your adventure is simple and seamless. Our expert guides, checklists, and tips ensure every journey is smooth and memorable. Let us be your travel companion as you create unforgettable memories worldwide.",
+        ];
+        var banner = 0;
+
+        function ShowBanners() {
+            if (document.images) {
+                banner = (banner + 1) % MyBanners.length; // Loop through images
+                document.ChangeBanner.src = MyBanners[banner]; // Update the banner image
+                document.getElementById("aboutText").innerText = AboutText[banner]; // Update the about text
+                setTimeout(ShowBanners, 5000); // Change every 5 seconds
+            }
+        }
+        </script>
+        <script src="search.js"></script>
+</body>
+</html>

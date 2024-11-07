@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="revew.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-plane fa-lg"></i> WanderlustTravel
+        </a>
+        <button class="navbar-toggler" onclick="toggleNav()">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="navbar-nav-container">
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packages.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servves.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="revew.html">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn nav-link">    <i class="fa-solid fa-search fa-lg"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                            <a href="home.html">Home</a>
+                            <a href="book.html">Book Now</a>
+                            <a href="packages.html">Packages</a>
+                            <a href="servves.html">Services</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="revew.html">Reviews</a>
+                            <a href="about.html">About us</a>
+                            </div>
+                            </div>
+                    </button>
+                </li>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1 class="heading wow fadeIn">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>       
+        <span>s</span>
+    </h1>
+    <div class="wrapper">
+        <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person1.avif)">
+                              <div  class="inner">
+                                  <p>Liam</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                <p>Incredible photos and travel tips...I’m already packing my bags!"</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" style="background-image: url(images/person3.avif)">
+                            <div class="inner">
+                                <p>Emma</p>
+                                <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                              <p>"This website made planning my dream vacation a breeze!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person2.avif)">
+                              <div class="inner">
+                                  <p>Aiden</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"A one-stop-shop for all my travel needs."</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person4.avif)">
+                              <div class="inner">
+                                  <p>Noah</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"User-friendly and full of fantastic travel ideas."</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person5.avif)">
+                              <div class="inner">
+                                  <p>Sophia</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"I found the best hidden gems thanks to this site."</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person6.avif)">
+                              <div class="inner">
+                                  <p>Mia</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"I discovered amazing places I never knew existed."</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person7.avif)">
+                              <div class="inner">
+                                  <p>Ethan</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"Exceptional travel guides and stunning visuals."</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(images/person8.avif)">
+                              <div class="inner">
+                                  <p>Ava</p>
+                                  <div class="star-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>"A treasure trove of travel inspiration and detailed guides!"</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+       </div>
+       
+        <!-- contact-footer -->
+        <div class="border-line"></div>
+        <section class="footer-about">
+            <div class="footer-contaner">
+                <div class="footer-img">
+                    <p class="contact-text">PROMO</p>
+                    <img src="images/promo.jpg" alt="promo" style="margin-top: 10px,;" width="300px" height="250px" >
+                    <div class="promo-text">Finding Your Perfect Place To Visit This Summer</div>
+                </div>
+                <div class="quick-links">
+                    <p class="contact-text">QUICK LINKS</p>
+                   <div class="linklist">
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">Services</a></li>
+                            <li><a href="#" class="lists">Insurance</a></li>
+                            <li><a href="#" class="lists">Agency</a></li>
+                            <li><a href="#" class="lists">Tourism</a></li>
+                            <li><a href="#" class="lists">Payment</a></li>
+                        </ul>
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">Booking</a></li>
+                            <li><a href="#" class="lists">RentalCar</a></li>
+                            <li><a href="#" class="lists">HostelWorld</a></li>
+                            <li><a href="#" class="lists">Trivago</a></li>
+                            <li><a href="#" class="lists">TripAdvisor</a></li>
+                        </ul>
+                        <ul class="liststyle">
+                            <li><a href="#" class="lists">London</a></li>
+                            <li><a href="#" class="lists">California</a></li>
+                            <li><a href="#" class="lists">Indonesia</a></li>
+                            <li><a href="#" class="lists">Europe</a></li>
+                            <li><a href="#" class="lists">Oceania</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <p class="contact-text">CONTACT INFO</p>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </div>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        +2 392 3929 210
+                    </div>
+                    <div class="contact-content">
+                        <i class="fa-solid fa-envelope"></i>
+                        emailaddress@domain.com
+                    </div>
+                    <p class="contact-text">SUBSCRIBE</p>
+                    <div class="subscribe-email">
+                        <input type="text" placeholder="example123@gmail.com" class="email-input">
+                        <input type="submit" value="SEND" class="snd-btn">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="owners">Copyright ©2024 All rights reserved | This website is made with <i class="fa-solid fa-heart"></i>by</p>
+                <p class="owners names">Shaikh Samiya | Syed Afifa | Topiwala Ayesha | Ayman Zehra | Shaikh Mishkat</p>
+            </footer>
+        </section>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+        AOS.init();
+      </script>
+      <script src="search.js"></script>
+</body>
+</html>

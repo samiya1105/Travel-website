@@ -1,0 +1,431 @@
+
+:root{
+    --orange:#ffa500;
+  }
+body{
+    background: antiquewhite;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0
+}
+.heading{
+    text-align: center;
+    padding:1rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+
+.container{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    /* left: calc(50% + 660px); */
+    opacity: 0;
+}
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    padding: 10px 10px;
+}
+
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 20px;
+    width: 200px;
+    height: 220px;
+    padding: 10px 10px;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 10px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.content button:hover{
+    cursor: pointer;
+    background-color: #f39c12;   
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+.border-line{
+    background-color: #f39c12;
+    height: 10px;
+}
+.footer-about{
+    margin: 600px 0px 0px 0px;
+    padding-bottom: 20px;
+    background-color:antiquewhite;
+    font-family: Arial, sans-serif;
+}
+.footer-contaner{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.promo-text{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    color:#f39c12;
+}
+.contact-form{
+    margin: 0px 10px 0px 100px;
+}
+ .contact-text{
+    text-align: center;
+    color: #f39c12;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.linklist{
+    display: flex;
+}
+.lists{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 2.5;
+}
+.liststyle{
+    list-style-type: none;
+}
+
+.contact-content{
+    line-height: 2.5;
+    color: black;
+}
+.fa-solid{
+    color:#f39c12;
+    margin-right: 10px;
+}
+.email-input{
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 2px solid #f39c12
+}
+.snd-btn{
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+}
+.snd-btn:hover{
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+}
+.owners{
+    text-align: center;
+}
+.names{
+    color: #f39c12;
+}
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: black;
+    padding: 18px 20px;
+    color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    color: #f39c12;
+    text-decoration: none;
+    margin-right:250px;
+}
+.navbar-toggler {
+    display: none; 
+    font-size: 1.5rem;
+    color: #f39c12;
+    background: none;
+    border: none;
+}
+
+.navbar-nav-container {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    color: #f39c12;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    position: absolute;
+    left: 20px;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    color: #f39c12;
+    background: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, opacity 0.3s;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: rgba(243, 156, 18, 0.7);
+    font-weight: bold;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(243, 156, 18, 0.7);
+    transition: width 0.5s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px; 
+    margin-left: auto; 
+}
+
+.nav-icons .nav-item {
+    list-style-type: none; 
+}
+  /* Style for the login button */
+  .login-button {
+    color: white;
+    background-color: #f39c12; /* Violet background to match the theme */
+    border: 1px solid white; /* Black border for contrast */
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the login button */
+  .login-button:hover {
+    background-color: white;
+    color: violet; /* Violet text on hover */
+    border-color: violet;
+  }
+  
+.dropbtn {    
+    color: #f39c12;
+    background-color: black;
+    padding-top: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    }
+    #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.jpg');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    }
+    #myInput:focus {outline: 3px solid #ddd;}
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    z-index: 1;
+    margin-left: -172px;
+    }
+    .dropdown-content a {
+        color: #f39c12;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    }
+    .dropdown a:hover {background-color: #ddd;}
+    .show {display: block;}
+
